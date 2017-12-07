@@ -175,21 +175,26 @@ public class InitHelper {
             qupaiService.initRecord(qpHelper.createVideoSessionCreateInfo(), qpHelper.createProjectOptions(), new QPUISettings());
             qupaiService.hasMroeMusic(moreMusic);
             if (qupaiService != null) {
-                qupaiService.addMusic(0, "Athena", "assets://Qupai/music/Athena");
-                qupaiService.addMusic(1, "Box Clever", "assets://Qupai/music/Box Clever");
-                qupaiService.addMusic(2, "Byebye love", "assets://Qupai/music/Byebye love");
-                qupaiService.addMusic(3, "chuangfeng", "assets://Qupai/music/chuangfeng");
-                qupaiService.addMusic(4, "Early days", "assets://Qupai/music/Early days");
-                qupaiService.addMusic(5, "Faraway", "assets://Qupai/music/Faraway");
-                qupaiService.addMusic(6, "andemund", "assets://Qupai/music/andemund");
-                qupaiService.addMusic(7, "Fade", "assets://Qupai/music/Fade");
-                qupaiService.addMusic(8, "Inspire", "assets://Qupai/music/Inspire");
-                qupaiService.addMusic(9, "River Flows In You", "assets://Qupai/music/River Flows In You");
-                qupaiService.addMusic(10, "Serenade", "assets://Qupai/music/Serenade");
-                qupaiService.addMusic(11, "Sky", "assets://Qupai/music/Sky");
-                qupaiService.addMusic(12, "Windfall", "assets://Qupai/music/Windfall");
-                qupaiService.addMusic(13, "You", "assets://Qupai/music/You");
-                qupaiService.addMusic(14, "Big Up", "assets://Qupai/music/Big Up");
+                qupaiService.addMusic(0, "Big Up", "assets://Qupai/music/Big Up");
+                qupaiService.addMusic(1, "Merry Christmas", "assets://Qupai/music/Merry Christmas");
+                qupaiService.addMusic(2, "Mistletoe", "assets://Qupai/music/Mistletoe");
+                qupaiService.addMusic(3, "Flashback", "assets://Qupai/music/Flashback");
+                qupaiService.addMusic(4, "Cool", "assets://Qupai/music/Cool");
+                qupaiService.addMusic(5, "Taste the Feeling", "assets://Qupai/music/Taste the Feeling");
+                qupaiService.addMusic(6, "Free Fall", "assets://Qupai/music/Free Fall");
+                qupaiService.addMusic(7, "This Is What You Came For", "assets://Qupai/music/This Is What You Came For");
+                qupaiService.addMusic(8, "Network (Chase and Status Remix)", "assets://Qupai/music/Network");
+                qupaiService.addMusic(9, "Sexy Back", "assets://Qupai/music/Sexy Back");
+                qupaiService.addMusic(10, "California Gurls", "assets://Qupai/music/California Gurls");
+                qupaiService.addMusic(11, "Party Rock Anthem", "assets://Qupai/music/Party Rock Anthem");
+                qupaiService.addMusic(12, "Solo Dance", "assets://Qupai/music/Solo Dance");
+                qupaiService.addMusic(13, "Ascension 2014", "assets://Qupai/music/Ascension 2014");
+                qupaiService.addMusic(14, "Wicked Wonderland", "assets://Qupai/music/Wicked Wonderland");
+                qupaiService.addMusic(15, "Panama", "assets://Qupai/music/Panama");
+                qupaiService.addMusic(16, "Trouble", "assets://Qupai/music/Trouble");
+                qupaiService.addMusic(17, "Stop", "assets://Qupai/music/Stop");
+                qupaiService.addMusic(18, "Shake It Off", "assets://Qupai/music/Shake It Off");
+                qupaiService.addMusic(19, "Nevada", "assets://Qupai/music/Nevada");
             }
 
             Logger.e("趣拍初始化成功...");

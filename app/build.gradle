@@ -78,6 +78,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:multidex:1.0.2'
+    compile 'com.android.support:support-v4:25.3.1'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support:cardview-v7:25.3.1'
@@ -91,6 +92,7 @@ dependencies {
     compile project(':ucrop')
     compile project(':livegiftview')
     compile project(':picture_library')
+    compile project(':swochinasdk')
     //趣拍所需
     compile 'com.fasterxml.jackson.core:jackson-databind:2.6.4'
     compile 'com.google.dagger:dagger:2.0.1'

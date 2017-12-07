@@ -98,6 +98,11 @@ public class MapNavigationActivity extends BiggarActivity {
         startLocation();
     }
 
+    @Override
+    public boolean isCanSwipeBack() {
+        return false;
+    }
+
     /**
      * 地图一些初始化
      */

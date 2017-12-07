@@ -1,1 +1,1 @@
-include ':app', ':gear2', ':Qupaisdk-release', ':IMLib', ':IMKit', ':picture_library', ':ucrop',':livegiftview'
+include ':app', ':gear2', ':Qupaisdk-release', ':IMLib', ':IMKit', ':picture_library', ':ucrop', ':livegiftview', ':swochinasdk'

@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -17,11 +18,15 @@ import com.orhanobut.logger.Logger;
 import com.swochina.videoView.AdResValue;
 import com.swochina.videoView.AdVideoView;
 import com.swochina.videoView.Parameter;
+import com.swochina.videoView.SpaceInfo;
 import com.swochina.videoView.Style;
 import com.swochina.videoView.SwoAdVideo;
+import com.swochina.videoView.SwoCleanManager;
 import com.swochina.videoView.SwoRequstClient;
 
+import java.util.ArrayList;
 import java.util.List;
+
 import butterknife.BindView;
 import butterknife.OnClick;
 import cn.biggar.biggar.R;
@@ -178,9 +183,6 @@ public class SplashActivity extends BiggarActivity<SplashPresenter> implements E
      * 手动跳转
      */
     private void handJump() {
-        if (videoView != null && videoView.isPlaying()) {
-            videoView.pause();
-        }
         if (AppPrefrences.getInstance(getApplicationContext()).isFirst()) {
             startActivity(new Intent(SplashActivity.this, GuideActivity.class));
         } else {
@@ -194,11 +196,13 @@ public class SplashActivity extends BiggarActivity<SplashPresenter> implements E
      */
     private void showJZHAdv() {
         ivStartImage.setVisibility(View.GONE);
-        videoView.setVisibility(View.VISIBLE);
         tvJump.setVisibility(View.GONE);
-        setDurationText();
 
-        videoView.play(adResValue, AdVideoView.JUMP_INSIDE, true);
+        videoView.setVisibility(View.VISIBLE);
+        boolean play = videoView.play(adResValue, AdVideoView.JUMP_INSIDE, true);
+        if (!play) {
+            handJump();
+        }
     }
 
     private void showBiggarAdv() {
@@ -218,16 +222,35 @@ public class SplashActivity extends BiggarActivity<SplashPresenter> implements E
     }
 
     private void requesJZHtAdv() {
-        new Thread() {
-            @Override
-            public void run() {
-                int result = SwoRequstClient.post(adResValue, advStyle, advSpaceId, advAppId, advCategory, advLocation, null, null, null, null);
-                Logger.e("advResult : " + result);
-                if (result == Parameter.OK) {
-                    isRequestJZHAdvFileSuccess = true;
-                }
-            }
-        }.start();
+        int result = SwoRequstClient.post(adResValue, advStyle, advSpaceId, advAppId, advCategory, advLocation, null, null, null, null);
+        Logger.e("advResult : " + result);
+
+        // 清理开屏页素材
+        ArrayList<SpaceInfo> spaceInfos = new ArrayList<SpaceInfo>();
+        spaceInfos.add(new SpaceInfo(advStyle, advSpaceId, advLocation));
+        SwoCleanManager.getInstance(this).clearCache(spaceInfos, advAppId,
+                advCategory, null, null, null, null);
+
+        switch(result){
+            case Parameter.OK:
+                isRequestJZHAdvFileSuccess = true;
+                break;
+            case Parameter.NO_ADVER:
+                isRequestJZHAdvFileSuccess = false;
+                break;
+            case Parameter.HAS_CACHE:
+                isRequestJZHAdvFileSuccess = true;
+                break;
+            case Parameter.NO_CACHE:
+                isRequestJZHAdvFileSuccess = false;
+                break;
+            case Parameter.NOT_PASS:
+                isRequestJZHAdvFileSuccess = false;
+                break;
+            case Parameter.ERROR:
+                isRequestJZHAdvFileSuccess = false;
+                break;
+        }
     }
 
     @AfterPermissionGranted(123)
@@ -311,7 +334,7 @@ public class SplashActivity extends BiggarActivity<SplashPresenter> implements E
             //比格
             case 1:
                 isRequestBiggarAdvSuccess = true;
-                isRequestJZHAdvFileSuccess =false;
+                isRequestJZHAdvFileSuccess = false;
                 break;
             //关闭
             case 2:
@@ -320,7 +343,12 @@ public class SplashActivity extends BiggarActivity<SplashPresenter> implements E
                 break;
             //极智汇
             case 3:
-                requesJZHtAdv();
+                new Thread() {
+                    @Override
+                    public void run() {
+                        requesJZHtAdv();
+                    }
+                }.start();
                 break;
         }
     }
