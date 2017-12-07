@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--透明-->
+    <color name="app_transparent">#00000000</color>
+    <color name="app_loading">#aa000000</color>
+    <color name="colorPrimary">#fc4513</color>
+    <!--<color name="colorPrimary">#f23365</color>-->
+    <color name="colorPrimaryDark">#404040</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="app_menu_bg">#f7a3ad</color>
+
+    <color name="gear_bar_focus">#333333</color>
+
+    <color name="bg_activity">#f1f1f1</color>
+    <color name="app_divider">#cccccc</color>
+
+    <!--<color name="app_white">#fafafa</color>-->
+    <color name="app_white">#ffffff</color>
+    <color name="app_white_p">#dcdcdc</color>
+
+    <color name="app_gray">#8e8e8e</color>
+    <color name="app_f3">#F3F3F3</color>
+    <color name="app_3">#333333</color>
+    <color name="app_lucency">#00000000</color>
+    <color name="app_c">#cccccc</color>
+    <color name="app_bg_color">#e5e5e5</color>
+    <color name="app_6">#666666</color>
+    <color name="app_9">#999999</color>
+    <color name="app_f4">#f4f4f4</color>
+    <color name="app_d6">#d6d6d6</color>
+    <color name="app_d">#dddddd</color>
+    <color name="app_b7">#b7b7b7</color>
+    <color name="app_ff">#ff254f</color>
+    <color name="app_fff6e7">#fff6e7</color>
+
+    <!--文字颜色-->
+    <color name="app_text_color_s">#333333</color>
+    <color name="app_text_color_z">#666666</color>
+    <color name="app_text_color_q">#999999</color>
+    <color name="app_text_color_g">#c3c3c3</color>
+    <color name="app_1a83d6">#1a83d6</color>
+    <color name="app_e5e5e5">#e5e5e5</color>
+
+    <color name="devide_line">#CBCED2</color>
+    <color name="whites">#ffffff</color>
+    <color name="app_f7">#f7f7f7</color>
+
+    <color name="grey3">#717071</color>
+    <color name="bg_gray">#bfbfbf</color>
+    <color name="bg_gray_white">#efeff4</color>
+
+
+    <color name="app_orange">#f5a5ae</color>
+
+    <color name="app_grey">#CBCED2</color>
+    <color name="app_grey_p">#b1b4b7</color>
+    <color name="app_bg_color_f">#f2f2f2</color>
+
+    <color name="app_80f">#CCffffff</color>
+    <color name="app_80">#CC000000</color>
+    <color name="app_90">#E6000000</color>
+
+    <color name="ce3b99_50">#80ce3b99</color>
+    <color name="ce3b99_60">#99ce3b99</color>
+
+    <color name="app_9f000">#9f000000</color><!--半透明-->
+    <color name="app_8f000">#8f000000</color><!--半透明-->
+    <color name="app_7f000">#7f000000</color><!--半透明-->
+    <color name="app_6f000">#6f000000</color><!--半透明-->
+    <color name="app_5f000">#5f000000</color><!--半透明-->
+    <color name="app_4f000">#4f000000</color><!--半透明-->
+    <color name="app_3f000">#3f000000</color><!--半透明-->
+    <color name="app_2f000">#2f000000</color><!--半透明-->
+    <color name="app_1f000">#1f000000</color><!--半透明-->
+
+</resources>

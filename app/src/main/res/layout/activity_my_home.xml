@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:isShowRightIcon="true"
+    app:titleBarRightIcon="@mipmap/share_3x">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <cn.biggar.biggar.view.scrollable.ScrollableLayout
+            android:id="@+id/person_scrollable_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:hvp_topOffset="0dp">
+
+            <include layout="@layout/header_my_home" />
+
+            <cn.biggar.biggar.view.NoScrollViewPager
+                android:id="@+id/person_home_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </cn.biggar.biggar.view.scrollable.ScrollableLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="#cc000000">
+
+        <include layout="@layout/include_buttom_bar" />
+    </LinearLayout>
+</cn.biggar.biggar.view.RootLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:isDefaultLeftFinish="false">
+
+    <fragment
+        android:id="@+id/conversation"
+        android:name="io.rong.imkit.fragment.ConversationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</cn.biggar.biggar.view.RootLayout>

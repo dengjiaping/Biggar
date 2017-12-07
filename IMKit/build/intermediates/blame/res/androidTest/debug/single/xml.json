@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\studio_space\\Biggar\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\rc_file_path.xml",
+        "source": "E:\\studio_space\\Biggar\\IMKit\\build\\intermediates\\bundles\\debug\\res\\xml\\rc_file_path.xml"
+    },
+    {
+        "merged": "E:\\Biggar\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\rc_file_path.xml",
+        "source": "E:\\Biggar\\IMKit\\build\\intermediates\\bundles\\debug\\res\\xml\\rc_file_path.xml"
+    }
+]

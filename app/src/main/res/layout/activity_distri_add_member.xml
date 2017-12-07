@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:titleBarTitle="添加成员">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_search"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1">
+
+            <com.allen.library.SuperButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:sCornersRadius="9999dp"
+                app:sSolidColor="#f3f3f3" />
+
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:hint="搜索用户名"
+                android:imeOptions="actionSearch"
+                android:lines="1"
+                android:paddingLeft="38dp"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:textColor="#333"
+                android:textColorHint="#c9c9c9"
+                android:textSize="14sp"
+                tools:text="看是否撒回复哈刷卡机卡回复哈舒服阿卡就是看好" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/store_search_icon_3x" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#333"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="只有您的粉丝才可以授权哦~"
+        android:textColor="@color/colorPrimary" />
+
+   <include layout="@layout/include_refresh_list"/>
+
+</cn.biggar.biggar.view.RootLayout>

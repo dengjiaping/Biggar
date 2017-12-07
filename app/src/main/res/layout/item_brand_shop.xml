@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gear_image_default" />
+
+        <RelativeLayout
+            android:layout_marginLeft="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/name_tv"
+                style="@style/wh_mw"
+                android:maxLines="2"
+                android:lineSpacingExtra="7dp"
+                android:layout_marginTop="24dp"
+                android:text="goodsName"
+                android:textColor="@color/app_text_color_s"
+                android:textSize="13sp" />
+
+
+
+            <!--<ImageView-->
+                <!--android:id="@+id/more_iv"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_marginBottom="16dp"-->
+                <!--android:layout_marginRight="9dp"-->
+                <!--style="@style/wh_ww"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@mipmap/detail" />-->
+            <LinearLayout
+                android:id="@+id/price_layout"
+                android:layout_marginBottom="14dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:paddingRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/price_tv"
+                    style="@style/wh_mw"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="￥0.0"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+                <TextView
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:textColor="@color/app_text_color_q"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="7dp"
+                    android:id="@+id/price_old_tv"
+                    style="@style/wh_mw"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="￥0.0" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content_tv"
+                style="@style/wh_ww"
+                android:layout_above="@id/price_layout"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:text="goodscontent"
+                android:textColor="@color/app_text_color_z"
+                android:textSize="8sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        style="@style/line_view_vertical"
+        android:background="#dddddd"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

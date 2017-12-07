@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:titleBarTitle="发布成功">
+
+    <TextView
+        android:id="@+id/tv_release_success_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="21dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="2"
+        android:text="Title"
+        android:textColor="@color/app_text_color_q"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/iv_release_success"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/gear_image_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="立即分享"
+            android:textColor="@color/app_3" />
+
+        <View style="@style/line_view_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_share_qq"
+                style="@style/guild_share_tv"
+                android:drawableTop="@mipmap/qq_guild"
+                android:text="QQ" />
+
+            <TextView
+                android:id="@+id/tv_share_weixin"
+                style="@style/guild_share_tv"
+                android:drawableTop="@mipmap/weixin_guild"
+                android:text="微信" />
+
+            <TextView
+                android:id="@+id/tv_share_pyq"
+                style="@style/guild_share_tv"
+                android:drawableTop="@mipmap/pengyouquan_guild"
+                android:text="朋友圈" />
+
+            <TextView
+                android:id="@+id/tv_share_weibo"
+                style="@style/guild_share_tv"
+                android:drawableTop="@mipmap/weibo_guild"
+                android:text="微博" />
+
+        </LinearLayout>
+
+        <View style="@style/line_view_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1080">
+
+            <TextView
+                android:id="@+id/iv_release_success_details"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="444"
+                android:background="@drawable/selector_bg_release_success_btn"
+                android:gravity="center"
+                android:text="查看详情"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="83" />
+
+            <TextView
+                android:id="@+id/iv_release_success_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="444"
+                android:background="@drawable/selector_bg_release_success_btn"
+                android:gravity="center"
+                android:text="返回主页"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+
+</cn.biggar.biggar.view.RootLayout>

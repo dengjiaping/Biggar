@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/ticket_redpacket_3x"
+        android:clickable="true"
+        android:orientation="vertical"
+        app:layout_heightPercent="77.78%w"
+        app:layout_widthPercent="100%">
+
+        <com.zhy.android.percent.support.PercentFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="66%"
+            app:layout_widthPercent="100%">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_default"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="100%">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="15%"
+                    app:layout_marginTopPercent="20%"
+                    app:layout_widthPercent="35%">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_brand_logo"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:src="@mipmap/default_head_icon"
+                        app:layout_heightPercent="82%"
+                        app:layout_widthPercent="100%h" />
+
+                    <TextView
+                        android:id="@+id/tv_quan_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px4"
+                        android:ellipsize="end"
+                        android:gravity="bottom"
+                        android:singleLine="true"
+                        android:text="旗舰店旗舰店旗舰店旗舰店"
+                        android:textColor="@color/app_3"
+                        android:textSize="@dimen/size22" />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+                <com.zhy.android.percent.support.PercentFrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/px170"
+                    android:layout_marginRight="@dimen/px170"
+                    app:layout_heightPercent="32%"
+                    app:layout_widthPercent="45%">
+
+                    <TextView
+                        android:id="@+id/tv_spending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="满600减100"
+                        android:textColor="#f4443e"
+                        android:textSize="@dimen/size40"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_money_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:singleLine="true"
+                            android:text="￥"
+                            android:textColor="#fb4f45"
+                            android:textSize="@dimen/size32" />
+
+                        <TextView
+                            android:id="@+id/tv_quan_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="center_horizontal|bottom"
+                            android:lines="1"
+                            android:singleLine="true"
+                            android:text="10"
+                            android:textColor="#fb4f45"
+                            android:textSize="@dimen/size49" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="8.5 折"
+                        android:textColor="#fb4f45"
+                        android:textSize="28sp"
+                        android:visibility="gone" />
+
+                </com.zhy.android.percent.support.PercentFrameLayout>
+
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_heightPercent="30%"
+                    app:layout_widthPercent="38%">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/redpacket_line_3x" />
+
+                    <TextView
+                        android:id="@+id/tv_quan_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="有效日期：2017-6-8"
+                        android:textColor="@color/app_9"
+                        android:textSize="@dimen/size24"
+                        app:layout_marginTopPercent="30%" />
+
+                    <TextView
+                        android:id="@+id/tv_goods_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="指定商品：无"
+                        android:textColor="@color/app_9"
+                        android:textSize="@dimen/size24"
+                        app:layout_marginTopPercent="5%" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+            <!--兑换券start-->
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_duihuan"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="100%">
+
+                <TextView
+                    android:id="@+id/tv_brand_name"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textSize="13sp"
+                    app:layout_heightPercent="16%"
+                    app:layout_marginTopPercent="26%"
+                    app:layout_widthPercent="35%" />
+
+                <com.allen.library.SuperButton
+                    android:id="@+id/tv_quan_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:maxLength="16"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColor="#f3463f"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    app:sCornersRadius="4dp"
+                    app:layout_heightPercent="16%"
+                    app:layout_marginTopPercent="8%"
+                    app:sStrokeColor="#f3463f"
+                    app:sStrokeWidth="1dp"
+                    app:sSolidColor="@color/whites"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="复制兑换码至\n公众号“比格秀”领取奖品"
+                    android:textSize="12sp"
+                    app:layout_heightPercent="30%"
+                    app:layout_widthPercent="100%" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <!--兑换券end-->
+
+        </com.zhy.android.percent.support.PercentFrameLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_heightPercent="22%"
+            app:layout_marginTopPercent="11%"
+            app:layout_widthPercent="100%">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恭喜您"
+                android:textColor="@color/whites"
+                android:textSize="@dimen/size40" />
+
+            <TextView
+                android:id="@+id/tv_quan_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获得一张满减券"
+                android:textColor="#80ffffff"
+                android:textSize="@dimen/size30"
+                app:layout_marginTopPercent="4%" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.allen.library.SuperButton
+            android:id="@+id/btn_after"
+            android:layout_width="@dimen/px194"
+            android:layout_height="@dimen/px73"
+            android:gravity="center"
+            android:text="以后再说"
+            android:textColor="@color/whites"
+            android:textSize="@dimen/size31"
+            app:sCornersRadius="9999dp"
+            app:sSolidColor="#b7b7b7" />
+
+        <Button
+            android:id="@+id/btn_quan_sure"
+            android:layout_width="@dimen/px194"
+            android:layout_height="@dimen/px73"
+            android:layout_marginLeft="@dimen/px40"
+            android:background="@mipmap/red_packe_tbtn_3x"
+            android:gravity="center"
+            android:text="马上使用"
+            android:textColor="@color/whites"
+            android:textSize="@dimen/size31" />
+    </LinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

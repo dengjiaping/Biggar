@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="订单编号"
+                android:textColor="@color/app_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="123456789"
+                android:textColor="@color/app_3"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="下单时间"
+                android:textColor="@color/app_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="2017-11-21 09:45:30"
+                android:textColor="@color/app_3"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_detail_express"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="快递"
+                android:textColor="@color/app_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="韵达快递"
+                android:textColor="@color/app_3"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="快递单号"
+                android:textColor="@color/app_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="123456789"
+                android:textColor="@color/app_3"
+                android:textSize="13sp" />
+
+            <com.allen.library.SuperButton
+                android:layout_width="44dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="14dp"
+                android:text="复制"
+                android:textColor="@color/whites"
+                android:textSize="12sp"
+                app:sCornersRadius="9999dp"
+                app:sSolidColor="@color/app_1a83d6" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

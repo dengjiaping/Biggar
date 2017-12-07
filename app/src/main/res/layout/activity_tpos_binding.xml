@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:isShowRightText="true"
+    app:titleBarRightText="跳过"
+    app:titleBarTitle="绑定手机号">
+    <LinearLayout
+        android:id="@+id/input_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+
+
+
+        <cn.biggar.biggar.view.ClearEditText
+            android:inputType="number"
+            android:id="@+id/tpos_binding_mobile_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_mobile"
+            android:drawablePadding="10dp"
+            android:hint="@string/registation_phone_number"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+        <View style="@style/line_view_vertical" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <cn.biggar.biggar.view.ClearEditText
+                android:id="@+id/tpos_binding_code_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@mipmap/modify_sms_icon"
+                android:drawablePadding="10dp"
+                android:hint="验证码"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                />
+
+            <View
+                style="@style/line_view_horizontal"
+                android:layout_margin="5dp" />
+            <TextView
+                android:id="@+id/get_tpos_binding_code_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimary" />
+            <TextView
+                android:id="@+id/get_tpos_binding_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_text_color_z"
+                android:text="@string/registation_have_phone_code" />
+        </LinearLayout>
+        <View style="@style/line_view_vertical" />
+        <cn.biggar.biggar.view.ClearEditText
+            android:inputType="textPassword"
+            android:id="@+id/set_login_password_ev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_pwd"
+            android:drawablePadding="10dp"
+            android:hint="@string/set_pwd"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+        <View style="@style/line_view_vertical" />
+
+        <TextView
+            android:id="@+id/complete_phone_tv"
+            style="@style/biggar_one_button_style"
+            android:background="@drawable/shape_rad_border_gray_white"
+            android:textColor="@color/app_text_color_g"
+            android:text="@string/complete"
+            />
+    </LinearLayout>
+</cn.biggar.biggar.view.RootLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp" />
+
+    <cn.biggar.biggar.view.MainBottomBar
+        android:id="@+id/main_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/iv_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_bottom_bar"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/show_field_click_3x" />
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@mipmap/biggold_redpacket_3x"
+        android:clickable="true"
+        app:layout_heightPercent="79.64%w"
+        app:layout_widthPercent="100%">
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="100%">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="12%"
+                app:layout_widthPercent="24%"
+                android:text="比格币"
+                android:textColor="#ff3c28"
+                app:layout_textSizePercent="8%"
+                app:layout_marginTopPercent="10%"
+                android:gravity="center"/>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="33%"
+                app:layout_widthPercent="60%"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textColor="#ff3c28"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/tv_bgb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="10"
+                    android:textColor="#ff3c28"
+                    android:textSize="60sp"
+                    android:textStyle="italic|bold" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="12%"
+                app:layout_widthPercent="30%"
+                app:layout_marginTopPercent="16%"
+                android:text="恭喜您"
+                android:textColor="#80ffffff"
+                android:textSize="26sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="9%"
+                app:layout_widthPercent="40%"
+                android:gravity="center"
+                android:text="获得一张比格币大奖"
+                android:textColor="@color/whites"
+                android:textSize="14sp" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <Button
+        android:id="@+id/btn_bgb_sure"
+        android:layout_width="@dimen/px200"
+        android:layout_height="@dimen/px73"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/red_packe_tbtn_3x"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/whites"
+        android:textSize="@dimen/size31" />
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

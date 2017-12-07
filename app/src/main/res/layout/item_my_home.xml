@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whites"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-12dp">
+
+        <ImageView
+            android:id="@+id/iv_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="16dp"
+            android:src="@mipmap/down_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_white">
+
+        <ImageView
+            android:id="@+id/video_conver_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/gear_image_default" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/video_tag"
+            android:visibility="gone"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/play_user_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignBottom="@id/video_conver_iv"
+            android:layout_marginBottom="-18dp"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/play_browsenumber_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/video_conver_iv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="6dp"
+            android:drawableLeft="@mipmap/scan"
+            android:drawablePadding="6dp"
+            android:text="0"
+            android:textColor="@color/app_text_color_q"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/play_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_conver_iv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@id/play_browsenumber_tv"
+            android:layout_toRightOf="@+id/play_user_iv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Name"
+            android:textColor="@color/app_text_color_s"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/play_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="BiggarBiggarBiggarBiggar"
+        android:textColor="@color/app_text_color_s"
+        android:textSize="14sp" />
+
+</LinearLayout>

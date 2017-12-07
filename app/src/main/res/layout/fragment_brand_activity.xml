@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.biggar.biggar.view.MultiStateView
+        android:id="@+id/multiStateView_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/layout_empty_view"
+        app:msv_errorView="@layout/layout_error_view"
+        app:msv_loadingView="@layout/layout_loading_view"
+        app:msv_viewState="loading">
+    <cn.biggar.biggar.view.pullableview.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/refresh_head" />
+
+        <cn.biggar.biggar.view.pullableview.PullableListView
+            android:paddingTop="9dp"
+            android:id="@+id/pull_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_white"
+            android:divider="@color/app_transparent"
+            android:dividerHeight="9dp" />
+
+        <include layout="@layout/load_more" />
+    </cn.biggar.biggar.view.pullableview.PullToRefreshLayout>
+    </cn.biggar.biggar.view.MultiStateView>
+</LinearLayout>

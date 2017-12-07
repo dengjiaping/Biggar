@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:titleBarTitle="新增收货地址">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="收货人"
+                android:textColor="@color/app_text_color_q"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edit_address_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/app_transparent"
+                android:hint="请输入收货人姓名"
+                android:textColor="@color/app_text_color_z"
+                android:textColorHint="@color/app_c"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/line_view_vertical" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="手机号码"
+                android:textColor="@color/app_text_color_q"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edit_address_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/app_transparent"
+                android:hint="请输入手机号码"
+                android:maxLength="11"
+                android:numeric="integer"
+                android:textColor="@color/app_text_color_z"
+                android:textColorHint="@color/app_c"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/line_view_vertical" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="省市区"
+                android:textColor="@color/app_text_color_q"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/selector_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/app_transparent"
+                android:gravity="center_vertical"
+                android:hint="请选择地址"
+                android:textColor="@color/app_text_color_z"
+                android:textColorHint="@color/app_c"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/line_view_vertical" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="详细地址"
+                android:textColor="@color/app_text_color_q"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edit_detailed_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/app_transparent"
+                android:hint="请输入收货人详细地址"
+                android:textColor="@color/app_text_color_z"
+                android:textColorHint="@color/app_c"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/line_view_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whites"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/add_address_ok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_squ_app_red"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:id="@+id/add_address_ok_text"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/str_button_save_text"
+                android:textColor="@color/whites"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</cn.biggar.biggar.view.RootLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:titleBarTitle="我的订单">
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="42.5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="0dp"
+        app:tl_indicator_color="@color/colorPrimary"
+        app:tl_indicator_corner_radius="0dp"
+        app:tl_indicator_height="3dp"
+        app:tl_indicator_width="20dp"
+        app:tl_tab_padding="0dp"
+        app:tl_textSelectColor="@color/colorPrimary"
+        app:tl_textUnselectColor="@color/app_3"
+        app:tl_textsize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_e5e5e5" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</cn.biggar.biggar.view.RootLayout>

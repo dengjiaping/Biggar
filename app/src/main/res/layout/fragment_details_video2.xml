@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <cn.biggar.biggar.view.BiggarVideoPlayer
+            android:id="@+id/video_player_item_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+
+    <include layout="@layout/layout_details_userinfo" />
+
+    <TextView
+        android:id="@+id/details_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="5sp"
+        android:paddingLeft="12dp"
+        android:paddingRight="11dp"
+        android:paddingBottom="7dp"
+        android:text="content"
+        android:textColor="#333"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTextSelectColor" format="color" />
+        <attr name="pstsTextDefultColor" format="color" />
+        <attr name="pstsTextSelectBold" format="boolean"></attr>
+        <attr name="pstsTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="GearTabPageIndicator" >
+        <attr name="gearIndicatorColor" format="color" />
+        <attr name="gearUnderlineColor" format="color" />
+
+        <attr name="gearIndicatorHeight" format="dimension" />
+        <attr name="gearUnderlineHeight" format="dimension" />
+        <attr name="gearDividerColor" format="color" />
+        <attr name="gearDividerPadding" format="dimension" />
+        <attr name="gearDividerWidth" format="dimension" />
+        <attr name="gearTabPaddingLeftRight" format="dimension" />
+        <attr name="gearScrollOffset" format="dimension" />
+        <attr name="gearTabBackground" format="reference" />
+        <attr name="gearShouldExpand" format="boolean" />
+        <attr name="gearTextAllCaps" format="boolean" />
+        <attr name="gearsTextSelectColor" format="color" />
+        <attr name="gearTextDefultColor" format="color" />
+        <attr name="gearTextSelectBold" format="boolean"></attr>
+        <attr name="gearTextSize" format="dimension" />
+    </declare-styleable>
+
+
+    
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
+    </declare-styleable>
+    
+     <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="radius2" format="dimension" />
+		<attr name="centered2" format="boolean" />
+		<attr name="fadeOut" format="integer" />
+		<attr name="inactiveType">
+			<flag name="stroke" value="0" />
+			<flag name="fill" value="1" />
+		</attr>
+		<attr name="activeType">
+			<flag name="stroke" value="0" />
+			<flag name="fill" value="1" />
+		</attr>
+		<attr name="circleSeparation" format="dimension" />
+		<attr name="activeRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RedDotImageView">
+        <attr name="src" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="radius_" format="integer"/>
+    </declare-styleable>
+</resources>

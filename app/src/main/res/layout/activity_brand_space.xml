@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:isShowRightIcon="true"
+    app:titleBarRightIcon="@mipmap/share_3x">
+
+
+    <!---->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <cn.biggar.biggar.view.scrollable.ScrollableLayout
+            android:id="@+id/scrollable_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:hvp_topOffset="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <per.sue.gear2.widget.flow.ViewFlowFixViewPager
+                    android:id="@+id/recommend_view_flow"
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp" />
+
+                <per.sue.gear2.widget.flow.CircleFlowIndicator
+                    android:id="@+id/recommend_circle_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/recommend_view_flow"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="10dp"
+                    app:radius2="5dp" />
+
+                <RelativeLayout
+                    android:id="@+id/brand_logo1_layout"
+                    android:layout_width="77dp"
+                    android:layout_height="77dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="187dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/brand_logo1_iv"
+                        style="@style/wh_mm"
+                        android:src="@mipmap/gear_image_default"
+                        app:civ_border_color="@color/app_e5e5e5"
+                        app:civ_border_width="1dp" />
+
+                    <ImageView
+                        android:id="@+id/brand_v_iv"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="45dp"
+                        android:src="@mipmap/v" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_below="@id/recommend_view_flow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/brand_logo1_layout">
+
+                    <TextView
+                        android:id="@+id/brand_fans_tv"
+                        style="@style/brand_tv_1"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="12dp"
+                        android:drawableLeft="@mipmap/scan"
+                        android:text=" 0"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/brand_fans_tv"
+                        android:layout_marginTop="6dp">
+
+                        <RelativeLayout
+                            android:id="@+id/brand_bottom_b_rl"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/brand_bottom_b_tv"
+                                style="@style/brand_tv_7"
+                                android:layout_width="55dp"
+                                android:layout_height="24dp"
+                                android:background="@drawable/shape_squ_app_red"
+                                android:text="关注"
+                                android:textColor="@color/app_white" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/brand_name1_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_toLeftOf="@id/brand_fans_tv"
+                        android:text="Name"
+                        android:textColor="@color/app_text_color_s"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/brand_fans_tv"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/brand_tags_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/brand_edit_tag_iv"
+                            style="@style/wh_ww"
+                            android:layout_marginLeft="14dp"
+                            android:src="@mipmap/pen"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!--分割线-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View style="@style/line_view_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp">
+
+                    <per.sue.gear2.widget.nav.GearTabPageIndicator
+                        android:id="@+id/brand_space_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@color/app_white"
+                        app:gearTextDefultColor="@color/app_gray"
+                        app:gearsTextSelectColor="@color/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <View
+                                style="@style/line_view_horizontal"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginTop="12dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <View
+                                style="@style/line_view_horizontal"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginTop="12dp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/line_view_vertical" />
+            </LinearLayout>
+
+            <cn.biggar.biggar.view.NoScrollViewPager
+                android:id="@+id/brand_space_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </cn.biggar.biggar.view.scrollable.ScrollableLayout>
+    </FrameLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@mipmap/brand_tab_bar">
+
+        <RelativeLayout
+            android:id="@+id/brand_bottom_d_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/brand_tv_7"
+                android:text="商家名片" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/app_c" />
+
+        <RelativeLayout
+            android:id="@+id/brand_bottom_a_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/brand_tv_7"
+                android:text="聊聊" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/app_c" />
+
+        <RelativeLayout
+            android:id="@+id/brand_bottom_c_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/brand_tv_7"
+                android:text="更多" />
+        </RelativeLayout>
+    </LinearLayout>
+</cn.biggar.biggar.view.RootLayout>

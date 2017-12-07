@@ -1,0 +1,159 @@
+<resources>
+
+    <string name="app_name">比格</string>
+    <string name="opt_label_sure">确\t定</string>
+
+    <string name="app_tip_submit_success">提交成功！</string>
+    <string name="app_label_delete">删除</string>
+
+    <string name="registation_phone_number">手机号</string>
+    <string name="registation_phone_code">验证码</string>
+    <string name="registation_have_phone_code">获取验证码</string>
+    <string name="registation_name">输入昵称</string>
+    <string name="registation_password">密码</string>
+    <string name="set_new_pwd">设置新密码</string>
+    <string name="set_pwd">设置登录密码</string>
+    <string name="registation_finish">完成注册</string>
+
+    <string name="login_phone_name">手机号</string>
+    <string name="login_password">密码</string>
+    <string name="login_password_tip">忘记密码</string>
+    <string name="login_three">其他登录</string>
+
+    <string name="regist_label_time_code">%1$ds</string>
+    <string name="regist_label_time_code_text">后重新获取</string>
+    <string name="regist_label_get_code">获取验证码</string>
+    <string name="regist_label_again_get_code">重新获取验证码</string>
+
+
+    <string name="download_progress">正在下载:%1$d%%</string>
+    <string name="download_success">下载完成，点击安装</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+
+    <string name="music_label_music_count">共%1$d首</string>
+
+    <!-- 6.0权限问题  -->
+    <string name="rationale_ask_again">没有该权限，程序可能无法正常工作， 请到设置界面设置权限。</string>
+    <string name="rationale_camera">程序需要打开摄像头权限。</string>
+    <string name="rationale_storage">程序需要读写文件权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="complete">完成</string>
+    <string name="confirm">确定</string>
+    <string name="modify_password">修改密码</string>
+    <string name="forget_password">重置密码</string>
+    <string name="binding_phone">绑定手机</string>
+    <string name="edit_phone_num">修改手机号</string>
+
+
+    <string name="tv_gift">送礼</string>
+    <string name="tv_comments">评论</string>
+    <string name="tv_forwarding">转发</string>
+
+    <string name="brand_nav_label_home">首页</string>
+    <string name="brand_nav_label_activity">活动</string>
+
+    <string name="brand_nav_label_open">开启宝箱</string>
+
+    <string name="tv_recommend">推荐</string>
+    <string name="tv_sales">销量</string>
+    <string name="tv_new_product">新品</string>
+    <string name="tv_price">价格</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <string name="tv_my_message">我的消息</string>
+
+
+    <string name="tv_total_bonus">总奖金</string>
+    <string name="tv_mian_zhi">星币</string>
+
+    <string name="str_load_error">加载失败</string>
+    <string name="str_operation_error">操作失败</string>
+
+
+    <string name="str_feedback">意见反馈</string>
+
+    <string name="str_loading">请稍等..</string>
+    <string name="str_empty">哎呀，没有获取到相关数据~</string>
+    <string name="str_error">亲，网络不给力~~~</string>
+    <string name="str_refresh">刷新</string>
+
+    <string name="str_certification">认证信息</string>
+    <string name="str_nick">昵称</string>
+    <string name="str_gender">性别</string>
+    <string name="str_phone">手机号</string>
+    <string name="str_phone_bound">手机绑定</string>
+    <string name="str_wechat">微信</string>
+    <string name="str_weibo">微博</string>
+    <string name="str_circle_friends">朋友圈</string>
+    <string name="str_qq">QQ</string>
+    <string name="str_live_platform">直播</string>
+    <string name="str_birthday">生日</string>
+    <string name="str_constellation">星座</string>
+    <string name="str_emotional_state">情感状态</string>
+    <string name="str_height">身高(cm)</string>
+    <string name="str_diploma">学历</string>
+    <string name="str_hometown">家乡</string>
+    <string name="str_address">所在地</string>
+
+    <string name="str_xieyi">协议</string>
+    <string name="str_button_save_text">保存到手机</string>
+
+    <string name="str_fans">粉丝</string>
+    <string name="str_focus">关注</string>
+
+    <string name="str_home_more">更多</string>
+
+    <string name="share_default_title">比格，一个有逼格的App</string>
+    <string name="share_default_content">上逼格秀出你的逼格</string>
+
+    <string name="str_yes">是</string>
+    <string name="str_no">否</string>
+
+    <string name="str_cancelconcern_hint">是否取消关注？</string>
+    <string name="str_cancelcollection_hint">是否取消收藏？</string>
+
+    <string name="str_release_success">发布成功</string>
+
+    <string name="str_official_message">官方公告</string>
+
+    <string name="str_feed_back">意见反馈</string>
+
+
+    <string name="str_feed_back_hint">请描述您遇到的问题，提交问题需要连接网络。如果您有多个问题，请详细列出来，以便我们更好的识别您的问题。</string>
+    <string name="str_about_content">比格的成长离不开大家的关注与支持，有建议和问题请多与我们交流。</string>
+    <string name="str_about_bottom_content_01">广州威朋信息科技有限公司</string>
+    <string name="str_about_bottom_content_02"> Copyright@2016比格biggar.cn 版权所有</string>
+
+    <string name="str_welfare">福利</string>
+
+
+    <string name="str_next_step">下一步</string>
+    <string name="str_apply_for_talent">申请认证比格达人</string>
+
+    <string name="str_card_share">卡片分享</string>
+    <string name="str_annunciate_finish_hint">3.最后一步，把您提交的作品分享到朋友圈才算完成本次通告哦！</string>
+    <string name="regist_phone_number_hint">输入手机号</string>
+    <string name="regist_set_head_hint">设置您的头像</string>
+    <string name="get_for_pwd_hint">通过短信验证码的方式找回密码，请确认您的手机能否接收短信</string>
+    <string name="str_edit_pass">请输入登录密码</string>
+    <string name="str_edit_phone">请输入手机号码</string>
+    <string name="str_edit_code">请输入验证码</string>
+    <string name="str_verify_pass">验证登录密码</string>
+    <string name="str_binding_phone">绑定手机</string>
+    <string name="str_new_binding_phone">绑定新手机号</string>
+    <string name="str_commit">提交</string>
+
+</resources>

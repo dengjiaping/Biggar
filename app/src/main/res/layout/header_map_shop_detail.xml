@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whites"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/iv_brand_bg"
+            android:layout_width="129dp"
+            android:layout_height="86dp"
+            android:scaleType="centerCrop"
+            android:src="@color/app_e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13.5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_store_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Sinomax 广州东站东方宝泰分店"
+                android:textColor="@color/app_3"
+                android:textSize="16sp" />
+
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/tv_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                app:sDividerLineType="none"
+                app:sLeftIconMarginLeft="2dp"
+                app:sLeftIconRes="@mipmap/call_icon"
+                app:sLeftLines="1"
+                app:sLeftTextColor="@color/app_9"
+                app:sLeftTextString="020-123456" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_e5e5e5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/map_address_3x" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/app_3" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:background="@color/app_f7" />
+
+    <include layout="@layout/layoout_coupon_title" />
+
+</LinearLayout>

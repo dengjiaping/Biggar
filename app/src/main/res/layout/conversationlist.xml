@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:titleBarTitle="聊天"
+    app:isShowRightIcon="true"
+    app:titleBarRightIcon="@mipmap/chat_contact_3x"
+    app:isDefaultLeftFinish="false">
+
+    <fragment
+        android:id="@+id/conversationlist"
+        android:name="io.rong.imkit.fragment.ConversationListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</cn.biggar.biggar.view.RootLayout>

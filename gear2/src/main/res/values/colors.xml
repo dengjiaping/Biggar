@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="gear_white">#fefefe</color>
+    <color name="gear_white_p">#ececec</color>
+    <color name="app_divider">#d9d9d9</color>
+    <color name="gear_gray">#eaeaea</color>
+    <color name="gear_gray_p">#bcbcbc</color>
+    <color name="app_text_color_z">#666666</color>
+
+    <color name="gear_blue">#34c2f5</color>
+    <color name="gear_blue_p">#37acd7</color>
+
+</resources>

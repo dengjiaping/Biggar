@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_7f000">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_cancel_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <include
+            android:id="@+id/bg_chai"
+            layout="@layout/pop_redpacket_chai"
+            android:visibility="visible"/>
+
+        <include
+            android:id="@+id/bg_bgb"
+            layout="@layout/pop_redpacket_bgb"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/bg_quan"
+            layout="@layout/pop_redpacket_quan"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

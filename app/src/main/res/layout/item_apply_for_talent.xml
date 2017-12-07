@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="74dp"
+    android:layout_height="77dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <per.sue.gear2.widget.RoundedImageView
+        android:id="@+id/item_aft_image"
+        android:scaleType="centerCrop"
+        app:radius_="10"
+        android:src="@mipmap/person_add_img_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/item_aft_delete_tv"
+        style="@style/app_text_caption"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/bg_translucent_black_bottom"
+        android:layout_alignBottom="@+id/iv_avatar"
+        android:gravity="center"
+        android:text="@string/app_label_delete"
+        />
+
+
+</RelativeLayout>

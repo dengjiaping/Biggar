@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:background="@drawable/shape_squ_rad_white"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/dialog_edit_input_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="编辑"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+            
+        <EditText
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:id="@+id/dialog_edit_input_content_et"
+            android:layout_marginTop="15dp"
+            android:textSize="14sp"
+            android:textColor="@color/app_text_color_q"
+            android:textColorHint="@color/app_c"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/shape_rounded_border_theme_big"
+            android:layout_width="match_parent"
+            android:layout_height="36dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/dialog_edit_input_cancel_tv"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/shape_rounded_corners_cc"
+                android:textColor="@color/app_white"
+                android:textSize="16sp"
+                android:text="@string/cancel"
+                android:layout_width="92dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:id="@+id/dialog_edit_input_confirm_tv"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="28dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:background="@drawable/shape_rounded_corners_theme"
+                android:textColor="@color/app_white"
+                android:textSize="16sp"
+                android:text="@string/confirm"
+                android:layout_width="92dp"
+                android:layout_height="32dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

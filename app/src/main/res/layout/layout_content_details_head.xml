@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/details_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_link_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/iv_link_goods"
+                android:layout_width="112dp"
+                android:layout_height="80dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_link_goods_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_link_goods_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recommend_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/app_bg_color"
+        android:gravity="center"
+        android:text="智能推荐"
+        android:textColor="@color/app_3"
+        android:textSize="17sp" />
+
+    <per.sue.gear2.widget.HorizontalListView
+        android:id="@+id/red_details_smart_horizontal_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/recommend_video_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/app_bg_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="相关推荐"
+            android:textColor="@color/app_3"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="38dp"
+            android:layout_height="13dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="11dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_rounded_corners_d6"
+            android:gravity="center"
+            android:text="换一批"
+            android:textColor="@color/app_3"
+            android:textSize="8sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/red_details_video_horizontal_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:horizontalSpacing="2dp"
+        android:numColumns="3"
+        android:scrollbars="none" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/app_bg_color"
+        android:gravity="center"
+        android:text="最新评论"
+        android:textColor="@color/app_3"
+        android:textSize="17sp" />
+
+</LinearLayout>

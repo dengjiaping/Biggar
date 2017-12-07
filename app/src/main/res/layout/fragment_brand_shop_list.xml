@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.biggar.biggar.view.MultiStateView
+        android:id="@+id/multiStateView_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/layout_empty_view"
+        app:msv_errorView="@layout/layout_error_view"
+        app:msv_loadingView="@layout/layout_loading_view"
+        app:msv_viewState="loading">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <cn.biggar.biggar.view.pullableview.PullToRefreshLayout
+                android:id="@+id/refresh_view_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/refresh_head" />
+
+                <cn.biggar.biggar.view.pullableview.PullableListView
+                    android:id="@+id/pull_view_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_white"
+                    android:dividerHeight="8dp"
+                    android:scrollbars="none" />
+
+                <include layout="@layout/load_more" />
+            </cn.biggar.biggar.view.pullableview.PullToRefreshLayout>
+
+            <cn.biggar.biggar.view.pullableview.PullToRefreshLayout
+                android:id="@+id/refresh_view_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/refresh_head" />
+
+                <cn.biggar.biggar.view.pullableview.PullableGridView
+                    android:id="@+id/pull_view_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_activity"
+                    android:horizontalSpacing="8dp"
+                    android:numColumns="2"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:scrollbars="none"
+                    android:verticalSpacing="8dp" />
+
+                <include layout="@layout/load_more" />
+            </cn.biggar.biggar.view.pullableview.PullToRefreshLayout>
+        </RelativeLayout>
+    </cn.biggar.biggar.view.MultiStateView>
+</RelativeLayout>

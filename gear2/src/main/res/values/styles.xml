@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--动画-->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/gear_push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/gear_push_bottom_out</item>
+    </style>
+
+    <!--custom 对话框  start-->
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+</resources>

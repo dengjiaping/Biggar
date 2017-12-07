@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_redpacket"
+                android:layout_width="72dp"
+                android:layout_height="68dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/iv_red_icon_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@mipmap/small_redpacket_3x"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_red_packet_num"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignLeft="@+id/iv_red_icon_bg"
+                    android:background="@drawable/shape_oval_red"
+                    android:gravity="center"
+                    android:textColor="@color/whites"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_90"
+            android:orientation="vertical">
+
+            <cn.biggar.biggar.view.DynamicSoreView
+                android:id="@+id/dynamicSoreView"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                app:SoreDistance="10"
+                app:SoreRadioSelect="@mipmap/dot01_3x"
+                app:SoreRadioUnselected="@mipmap/dot02_3x" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:src="@mipmap/star_coin_icon"
+                    android:textColor="@color/app_text_color_s"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/balance_of_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="@color/whites"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_recharge"
+                    android:layout_width="48dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:drawableRight="@mipmap/arrow_right_yellow3x"
+                    android:gravity="center"
+                    android:text="充值"
+                    android:textColor="#ffae00"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+
+                        <com.allen.library.SuperButton
+                            android:id="@+id/tv_send_gift"
+                            android:layout_width="68dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/tv_recharge"
+                            android:gravity="center"
+                            android:text="赠送"
+                            android:textColor="@color/whites"
+                            android:textSize="14sp"
+                            app:sCornersRadius="9999dp"
+                            app:sSolidColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <cn.biggar.biggar.view.MultiClickButton
+        android:id="@+id/multi_click_button"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="268dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <me.dudu.livegiftview.GiftFrameLayout
+            android:id="@+id/layout_gift_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <me.dudu.livegiftview.GiftFrameLayout
+            android:id="@+id/layout_gift_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_full_gift"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

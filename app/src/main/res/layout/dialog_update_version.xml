@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/upgrade_bg1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/upgrade_bg2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="12dp"
+                android:text="发现新版本"
+                android:textColor="#333"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/log_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="1.xxxx"
+                android:textColor="#666"
+                android:textSize="16sp" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_update_controll"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/cancel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_squ_grey"
+                        android:text="以后再说"
+                        android:textSize="@dimen/app_text_body" />
+
+                    <Button
+                        android:id="@+id/sure_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_squ_organge"
+                        android:text="立即升级"
+                        android:textColor="@color/app_white"
+                        android:textSize="@dimen/app_text_body" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_updateing"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="正在更新..."
+                        android:textColor="@color/colorPrimary" />
+
+                    <com.daimajia.numberprogressbar.NumberProgressBar
+                        android:id="@+id/number_progress_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="8dp"
+                        app:progress_text_color="@color/colorPrimary" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/card_share_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/share_card_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#00000000"
+                    android:orientation="vertical">
+
+                    <per.sue.gear2.widget.flow.ViewFlowFixViewPager
+                        android:id="@+id/recommend_view_flow"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_rounded_white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/share_card_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:maxLines="2"
+                            android:text=""
+                            android:textColor="@color/app_text_color_z"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/share_card_tag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+
+                        <View
+                            style="@style/line_view_vertical"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <cn.biggar.biggar.view.SmartImageView
+                                    android:id="@+id/share_card_qr_code_image"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginLeft="8dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="识别二维码，一起比格秀！"
+                                        android:textColor="@color/app_text_color_q"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="3dp"
+                                            android:text="Biggar.cn"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="14sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="4dp"
+                                            android:layout_marginRight="3dp"
+                                            android:text="只做有价值的社交"
+                                            android:textColor="@color/app_text_color_q"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_gravity="bottom|right"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@mipmap/logo" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <per.sue.gear2.widget.flow.CircleFlowIndicator
+                    android:id="@+id/recommend_circle_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="180dp"
+                    app:inactiveType="fill"
+                    app:radius2="4dp" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/share_card_qq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/share_card_qq"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="QQ"
+                android:textColor="@color/whites"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/share_card_weixin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/share_card_wexin"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="微信"
+                android:textColor="@color/whites"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/share_card_pyq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/share_card_pengyouquan"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="朋友圈"
+                android:textColor="@color/whites"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/share_card_weibo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/share_card_weibo"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="微博"
+                android:textColor="@color/whites"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/share_card_save"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/share_card_save"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="保存到手机"
+                android:textColor="@color/whites"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</cn.biggar.biggar.view.RootLayout>

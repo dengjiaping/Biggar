@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/whites"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:background="@color/app_bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp">
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/layout_talent_progress_2"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="请上传本人形象照片(3-5)张"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/aft_recycler"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"></android.support.v7.widget.RecyclerView>
+        <View
+            android:layout_marginTop="15dp"
+            style="@style/line_view_vertical"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:id="@+id/aft_submit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_rounded_theme"
+        android:gravity="center"
+        android:text="提交审核"
+        android:textColor="@color/whites" />
+</RelativeLayout>

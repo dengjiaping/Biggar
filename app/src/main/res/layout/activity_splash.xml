@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whites">
+
+    <ImageView
+        android:id="@+id/iv_start_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/start_bg" />
+
+    <com.swochina.videoView.AdVideoView
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whites"
+        android:visibility="gone" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/tv_jump"
+        android:layout_width="72dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:height="28dp"
+        android:gravity="center"
+        android:text="跳过 0s"
+        android:textColor="@color/whites"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:sCornersRadius="9999dp"
+        app:sSolidColor="@color/app_5f000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whites">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/splash_logo" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

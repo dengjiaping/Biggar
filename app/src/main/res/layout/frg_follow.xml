@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5">
+
+    <cn.biggar.biggar.view.MulitStatusView
+        android:id="@+id/multiStatusView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/layout_empty_view"
+        app:msv_errorView="@layout/layout_error_view"
+        app:msv_loadingView="@layout/layout_loading_view"
+        app:msv_viewState="loading">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_biggar_show_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </cn.biggar.biggar.view.MulitStatusView>
+</FrameLayout>

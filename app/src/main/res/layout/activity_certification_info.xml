@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:isShowRightText="true"
+    app:titleBarRightText="确定"
+    app:titleBarTitle="认证信息">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/app_bg_color" />
+
+    <EditText
+        android:id="@+id/ci_edit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:hint="请输入认证信息"
+        android:maxLength="6"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/app_text_color_z"
+        android:textColorHint="@color/app_text_color_q"
+        android:textSize="16sp" />
+
+    <View style="@style/line_view_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="参考认证类型:"
+        android:textColor="@color/app_text_color_z"
+        android:textSize="16sp" />
+
+    <cn.biggar.biggar.view.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/layout_empty_view"
+        app:msv_errorView="@layout/layout_error_view"
+        app:msv_loadingView="@layout/layout_loading_view"
+        app:msv_viewState="loading">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16sp"
+            android:paddingTop="16dp"
+            android:scrollbars="none">
+
+            <cn.biggar.biggar.view.MultipleTextViewGroup
+                android:id="@+id/mtv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                app:overspread="false"
+                app:textBackground="@drawable/shape_rounded_border_theme"
+                app:textColor="@color/colorPrimary"
+                app:textLineMargin="13dp"
+                app:textPaddingBottom="3dp"
+                app:textPaddingLeft="10dp"
+                app:textPaddingRight="10dp"
+                app:textPaddingTop="3dp"
+                app:textSize="13sp"
+                app:textWordMargin="11dp" />
+        </ScrollView>
+    </cn.biggar.biggar.view.MultiStateView>
+</cn.biggar.biggar.view.RootLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item  >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="4dp"/>
+            <solid android:color="@color/whites"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/shape_rounded_border_cc">
+    </item>
+</layer-list>

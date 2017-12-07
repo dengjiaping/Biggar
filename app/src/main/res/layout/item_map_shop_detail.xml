@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/whites">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="28dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.allen.library.SuperButton
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            app:sShapeType="oval"
+            app:sSolidColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="满100减10"
+            android:textColor="@color/app_3"
+            android:id="@+id/tv_quan"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="28dp"
+        android:background="@color/app_e5e5e5" />
+</LinearLayout>

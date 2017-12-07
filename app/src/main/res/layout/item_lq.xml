@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                android:minLines="2"
+                android:text="Mar卖出了1件超级无敌时尚耳机机"
+                android:textColor="#333"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="1970-1-1 00:00"
+                android:textColor="#ababab"
+                android:textSize="12sp"
+                android:id="@+id/tv_date"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="14dp"
+            android:gravity="center_vertical"
+            android:text="+89"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:background="#e3e3e3" />
+
+</LinearLayout>

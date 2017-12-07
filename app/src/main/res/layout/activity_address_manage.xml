@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:titleBarTitle="地址管理">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_color"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/address_no_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@mipmap/warning"
+                    android:drawablePadding="10dp"
+                    android:text="您还未填写地址"
+                    android:textColor="@color/app_text_color_q"
+                    android:textSize="16sp" />
+
+
+                <per.sue.gear2.widget.MyListView
+                    android:id="@+id/address_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/app_c"
+                    android:dividerHeight="15dp">
+
+                </per.sue.gear2.widget.MyListView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/whites"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/add_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_squ_app_red"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="新增收货地址"
+                    android:textColor="@color/whites"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</cn.biggar.biggar.view.RootLayout>

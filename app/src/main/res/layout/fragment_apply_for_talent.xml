@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whites">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="221dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/apply_for_talent_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/aft_hint_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="你的价值，我们来展现"
+                        android:textColor="@color/whites"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:gravity="center">
+
+                        <View
+                            android:layout_width="94dp"
+                            android:layout_height="1dp"
+                            android:background="@color/whites" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@mipmap/biggar" />
+
+                        <View
+                            android:layout_width="94dp"
+                            android:layout_height="1dp"
+                            android:background="@color/whites" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <per.sue.gear2.widget.CircleImageView
+                android:visibility="gone"
+                android:id="@+id/aft_header_iv"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="182dp"
+                android:src="@mipmap/gear_image_default"
+                app:borderWidth="1dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/apply_for_talent_layout_1"
+            android:layout_marginTop="46dp">
+
+            <ImageView style="@style/apply_for_talent_iv_1" />
+
+            <TextView
+                style="@style/apply_for_talent_tv_1"
+                android:text="名字展示认证信息，身份的象征" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/apply_for_talent_layout_1">
+
+            <ImageView style="@style/apply_for_talent_iv_1" />
+
+            <TextView
+                style="@style/apply_for_talent_tv_1"
+                android:text="让更多粉丝和商家关注你" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/apply_for_talent_layout_1"
+            android:gravity="start">
+
+            <ImageView
+                style="@style/apply_for_talent_iv_1"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                style="@style/apply_for_talent_tv_1"
+                android:text="认证达人收录在比格官方的达人库，享有商家邀约，任务派发，比格秀录制等优先权利" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aft_apply_for_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/aft_apply_for_tv"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/selector_rounded_theme"
+                android:gravity="center"
+                android:text="@string/str_apply_for_talent"
+                android:textColor="@color/whites" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="26dp"
+                android:text="提示:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="5dp"
+                android:text="上传本人真实照片(3-5张)"
+                android:textColor="@color/app_text_color_z"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="5dp"
+                android:text="个人信息确保真实有效"
+                android:textColor="@color/app_text_color_z"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

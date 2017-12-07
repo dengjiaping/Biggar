@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whites">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_video"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <cn.biggar.biggar.view.BiggarVideoPlayer
+                android:id="@+id/video_player"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e5e5e5"
+                android:visibility="gone"
+                app:delay_time="3000"
+                app:indicator_drawable_selected="@drawable/shape_circle_red"
+                app:indicator_drawable_unselected="@drawable/shape_circle_white"
+                app:indicator_height="8dp"
+                app:indicator_margin="4dp"
+                app:indicator_width="8dp" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/video_back" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <include layout="@layout/content_detail_bottom" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="送礼物有惊喜哦！"
+        android:textColor="@color/whites"
+        android:background="@mipmap/rmd_frame_3x"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:id="@+id/send_gift_tips"
+        android:visibility="gone"/>
+
+
+    <cn.biggar.biggar.view.GiftListLayout
+        android:id="@+id/gift_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

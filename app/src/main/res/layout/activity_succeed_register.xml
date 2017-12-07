@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/success_register_ie"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/default_head_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/success_register_ie"
+            android:layout_alignRight="@id/success_register_ie"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/phone_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/regist_set_head_hint"
+        android:textColor="@color/app_text_color_z" />
+
+    <cn.biggar.biggar.view.ClearEditText
+
+        android:id="@+id/success_register_et"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:drawableLeft="@mipmap/ic_nick"
+        android:drawablePadding="10dp"
+        android:hint="@string/registation_name"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:singleLine="true"
+        android:textColor="@color/app_text_color_z"
+        android:textColorHint="@color/app_text_color_q"
+        android:textSize="14sp" />
+
+    <View
+        style="@style/line_view_vertical"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/success_register_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/input_ll"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_rad_border_transparent"
+        android:gravity="center"
+        android:text="@string/registation_finish"
+        android:textColor="@color/whites"
+        android:textSize="17sp" />
+
+    <LinearLayout
+
+        android:id="@+id/layout_xieyi_view"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/regist_view"
+
+        android:layout_alignStart="@+id/regist_view"
+        android:layout_below="@+id/regist_view"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_check_box"
+            android:checked="false"
+            android:paddingLeft="8dp"
+            android:text="轻触“完成”按钮，即表示您同意"
+            android:textColor="@color/app_text_color_z"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/success_register_xie_yi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="《比格服务协议》"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

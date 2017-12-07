@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:titleBarTitle="我的收益"
+    app:isShowRightIcon="true"
+    app:titleBarRightIcon="@mipmap/member_money_date_3x">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f6f6f6">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:textColor="#999"
+            android:textSize="16sp"
+            tools:text="2016.7.8-2017-8-9" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="14dp"
+            android:src="@mipmap/money_date_close_3x" />
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#cdcdcd">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_distri_earnings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whites" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/btn_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/colorPrimary"
+        android:text="总收入：￥0"
+        android:textColor="@color/whites"
+        android:textSize="17sp" />
+</cn.biggar.biggar.view.RootLayout>

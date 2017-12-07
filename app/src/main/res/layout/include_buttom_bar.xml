@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <cn.biggar.biggar.view.BottomView
+        android:id="@+id/buttomBar_02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        my:BottomView_icon_default="@mipmap/followed_3x"
+        my:BottomView_icon_select="@mipmap/focus_3x"
+        my:BottomView_text="关注"
+        my:BottomView_text_color_default="@color/app_white"
+        my:BottomView_text_color_select="@color/app_white" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="1px"
+        android:layout_height="28dp"
+        android:background="@color/app_white" />
+
+    <cn.biggar.biggar.view.BottomView
+        android:id="@+id/buttomBar_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        my:BottomView_icon_default="@mipmap/message_3x"
+        my:BottomView_icon_select="@mipmap/message_3x"
+        my:BottomView_text="聊天"
+        my:BottomView_text_color_default="@color/app_white"
+        my:BottomView_text_color_select="@color/app_white" />
+
+</LinearLayout>

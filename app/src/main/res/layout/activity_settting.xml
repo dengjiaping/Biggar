@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:titleBarTitle="设置">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/user_info_tv"
+                style="@style/setting_item"
+                android:drawableRight="@mipmap/ic_arrow_right"
+                android:gravity="center_vertical"
+                android:text="编辑资料"
+                android:textColor="@color/app_text_color_q"
+                android:textSize="13sp" />
+
+            <View style="@style/line_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/set_password_ll"
+                style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_tv"
+                    android:layout_weight="1"
+                    android:text="设置密码" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@mipmap/ic_arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="******"
+                    android:textColor="@color/app_text_color_q" />
+            </LinearLayout>
+
+            <View style="@style/line_view_vertical" />
+
+
+            <LinearLayout
+                android:id="@+id/address_ll"
+                style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_tv"
+                    android:layout_weight="1"
+                    android:text="收货地址" />
+
+                <TextView
+                    android:id="@+id/address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@mipmap/ic_arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="暂无"
+                    android:textColor="@color/app_text_color_q" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/app_bg_color" />
+
+
+            <LinearLayout
+                android:id="@+id/edit_phone_ll"
+                style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_tv"
+                    android:layout_weight="1"
+                    android:text="@string/str_phone_bound" />
+
+                <TextView
+                    android:id="@+id/edit_phone_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_squ_app_red"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:text="绑定"
+                    android:textColor="@color/whites" />
+
+                <ImageView
+                    style="@style/edit_info_iv_1"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <View style="@style/line_view_vertical" />
+
+            <LinearLayout style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_tv"
+                    android:layout_weight="1"
+                    android:text="微博" />
+
+                <TextView
+                    android:id="@+id/bind_weibo_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_squ_app_red"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:text="绑定"
+                    android:textColor="@color/whites" />
+
+                <ImageView
+                    style="@style/edit_info_iv_1"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <View style="@style/line_view_vertical" />
+
+            <LinearLayout style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_tv"
+                    android:layout_weight="1"
+                    android:text="QQ" />
+
+                <TextView
+                    android:id="@+id/bind_QQ_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_squ_app_red"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:text="绑定"
+                    android:textColor="@color/whites" />
+
+                <ImageView
+                    style="@style/edit_info_iv_1"
+
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <View style="@style/line_view_vertical" />
+
+            <LinearLayout style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_tv"
+                    android:layout_weight="1"
+                    android:text="微信" />
+
+                <TextView
+                    android:id="@+id/bind_WX_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_squ_app_red"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:text="绑定"
+                    android:textColor="@color/whites" />
+
+                <ImageView
+                    style="@style/edit_info_iv_1"
+
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/app_bg_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/app_bg_color"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/fwipecache_ll"
+                style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_tv"
+                    android:layout_weight="1"
+                    android:text="清理缓存" />
+
+                <TextView
+                    android:id="@+id/cache_size_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@mipmap/ic_arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="0.0MB"
+                    android:textColor="@color/app_text_color_q" />
+            </LinearLayout>
+
+            <View style="@style/line_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/feedback_ll"
+                style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_tv"
+                    android:drawableRight="@mipmap/ic_arrow_right"
+                    android:text="给我们反馈" />
+
+
+            </LinearLayout>
+
+            <View style="@style/line_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/about_ll"
+                style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_tv"
+                    android:drawableRight="@mipmap/ic_arrow_right"
+                    android:text="关于我们" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_bg_color">
+
+                <TextView
+                    android:id="@+id/login_out_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/selector_sem_primary"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="退出"
+                    android:textColor="@color/app_white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</cn.biggar.biggar.view.RootLayout>

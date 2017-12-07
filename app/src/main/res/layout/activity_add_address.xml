@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whites"
+    app:isShowRightText="true"
+    app:titleBarRightText="保存"
+    app:titleBarTitle="新增收货地址">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货人　"
+                android:textColor="@color/app_3" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:background="@color/whites"
+                android:hint="请输入收货人姓名"
+                android:imeOptions="actionNext"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/app_3"
+                android:textColorHint="@color/app_9"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系方式"
+                android:textColor="@color/app_3" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:background="@color/whites"
+                android:hint="请输入收货人手机号码"
+                android:imeOptions="actionNext"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/app_3"
+                android:textColorHint="@color/app_9"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_e5e5e5" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在地址"
+                android:textColor="@color/app_3" />
+
+            <TextView
+                android:id="@+id/tv_city_area"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_weight="1"
+                android:background="@color/whites"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="广东广州"
+                android:textColor="@color/app_3"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:src="@mipmap/arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详细地址"
+                android:textColor="@color/app_3" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:background="@color/whites"
+                android:gravity="top"
+                android:hint="请输入详细地址"
+                android:lines="2"
+                android:textColor="@color/app_3"
+                android:textColorHint="@color/app_9"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设为默认地址"
+                    android:textColor="@color/app_3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="注：每次下单时会默认使用该地址"
+                    android:textColor="@color/app_9" />
+            </LinearLayout>
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/sb_default"
+                style="@style/SwitchButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                app:kswBackDrawable="@drawable/ios_back_drawable"
+                app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                app:kswThumbMarginBottom="-8dp"
+                app:kswThumbMarginLeft="-4dp"
+                app:kswThumbMarginRight="-4dp"
+                app:kswThumbMarginTop="-2.5dp"
+                app:kswThumbRangeRatio="1.5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_e5e5e5" />
+    </LinearLayout>
+
+</cn.biggar.biggar.view.RootLayout>

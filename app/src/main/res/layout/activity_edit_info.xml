@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:titleBarTitle="编辑资料">
+
+    <cn.biggar.biggar.view.MultiStateView
+        android:id="@+id/edit_msv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/layout_empty_view"
+        app:msv_errorView="@layout/layout_error_view"
+        app:msv_loadingView="@layout/layout_loading_view">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_top_part"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        style="@style/line_view_vertical"
+                        android:layout_height="8dp"
+                        android:background="@color/app_bg_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/edit_talent_progress_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <include layout="@layout/layout_talent_progress_1" />
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/edit_header_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="97dp"><!--97  /  127  -->
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/edit_header_iv"
+                                android:layout_width="77dp"
+                                android:layout_height="77dp"
+                                android:layout_centerInParent="true"
+                                android:src="@mipmap/gear_image_default" />
+
+                            <ImageView
+                                android:id="@+id/edit_v_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@id/edit_header_iv"
+                                android:layout_centerHorizontal="true"
+                                android:paddingBottom="1dp"
+                                android:paddingLeft="18dp"
+                                android:src="@mipmap/v" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View style="@style/line_view_vertical" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_view_vertical"
+                    android:layout_height="8dp"
+                    android:background="@color/app_bg_color" />
+
+                <LinearLayout
+                    android:id="@+id/edit_certification_ll"
+                    style="@style/edit_info_ll_1">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_certification"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/edit_certification_tv"
+                        style="@style/edit_info_tv_2"
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+                <View style="@style/line_view_vertical" />
+
+                <View
+                    style="@style/line_view_vertical"
+                    android:layout_height="8dp"
+                    android:background="@color/app_bg_color" />
+
+                <LinearLayout
+
+                    android:id="@+id/edit_nick_ll"
+                    style="@style/edit_info_ll_1">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_nick" />
+
+                    <TextView
+                        android:id="@+id/edit_nick_tv"
+                        style="@style/edit_info_tv_2" />
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+                <View style="@style/line_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/edit_userinfo_1_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/edit_idiograph_ll"
+                        style="@style/edit_info_ll_1">
+
+                        <TextView
+                            style="@style/edit_info_tv_1"
+                            android:text="签名" />
+
+                        <TextView
+                            android:id="@+id/edit_idiograph_tv"
+                            style="@style/edit_info_tv_2" />
+
+                        <ImageView style="@style/edit_info_iv_1" />
+                    </LinearLayout>
+
+                    <View style="@style/line_view_vertical" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/edit_gender_ll"
+                    style="@style/edit_info_ll_1">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_gender" />
+
+                    <TextView
+                        android:id="@+id/edit_gender_tv"
+                        style="@style/edit_info_tv_2" />
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+                <View style="@style/line_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/edit_birthday_ll"
+                    style="@style/edit_info_ll_1">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_birthday" />
+
+                    <TextView
+                        android:id="@+id/edit_birthday_tv"
+                        style="@style/edit_info_tv_2" />
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+                <View style="@style/line_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/edit_height_ll"
+                    style="@style/edit_info_ll_1">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_height" />
+
+                    <TextView
+                        android:id="@+id/edit_height_tv"
+                        style="@style/edit_info_tv_2" />
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+                <View style="@style/line_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/edit_address_ll"
+                    style="@style/edit_info_ll_1"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_address" />
+
+                    <TextView
+                        android:id="@+id/edit_address_tv"
+                        style="@style/edit_info_tv_2" />
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_view_vertical"
+                    android:layout_height="8dp"
+                    android:background="@color/app_bg_color" />
+
+                <LinearLayout
+                    android:id="@+id/edit_wechat_ll"
+                    style="@style/edit_info_ll_1"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_wechat" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|end"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/edit_wechat_left_iv"
+                            android:layout_width="32dp"
+                            android:layout_height="38dp"
+                            android:src="@mipmap/weixinicon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="加TA微信"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/edit_wechat_tv2"
+                        style="@style/edit_info_tv_2"
+                        android:visibility="visible" />
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+                <View style="@style/line_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/edit_weibo_ll"
+                    style="@style/edit_info_ll_1">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_weibo" />
+
+                    <TextView
+                        android:id="@+id/edit_weibo_tv"
+                        style="@style/edit_info_tv_2" />
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+                <View style="@style/line_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/edit_live_platform_ll"
+                    style="@style/edit_info_ll_1">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_live_platform" />
+
+                    <TextView
+                        android:id="@+id/edit_live_platform_tv"
+                        style="@style/edit_info_tv_2" />
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+                <View style="@style/line_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/edit_constellation_ll"
+                    style="@style/edit_info_ll_1"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_constellation" />
+
+                    <TextView
+                        android:id="@+id/edit_constellation_tv"
+                        style="@style/edit_info_tv_2" />
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/edit_emotional_ll"
+                    style="@style/edit_info_ll_1"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_emotional_state" />
+
+                    <TextView
+                        android:id="@+id/edit_emotional_tv"
+                        style="@style/edit_info_tv_2" />
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/edit_diploma_ll"
+                    style="@style/edit_info_ll_1"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_diploma" />
+
+                    <TextView
+                        android:id="@+id/edit_diploma_tv"
+                        style="@style/edit_info_tv_2" />
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/edit_hometown_ll"
+                    style="@style/edit_info_ll_1"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/edit_info_tv_1"
+                        android:text="@string/str_hometown" />
+
+                    <TextView
+                        android:id="@+id/edit_hometown_tv"
+                        style="@style/edit_info_tv_2" />
+
+                    <ImageView style="@style/edit_info_iv_1" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_next_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_bg_color"
+                    android:minHeight="100dp">
+
+                    <TextView
+                        android:id="@+id/edit_next_step_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="64dp"
+                        android:layout_marginRight="64dp"
+                        android:background="@drawable/selector_rounded_theme"
+                        android:gravity="center"
+                        android:text="@string/str_next_step"
+                        android:textColor="@color/whites"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+    </cn.biggar.biggar.view.MultiStateView>
+</cn.biggar.biggar.view.RootLayout>

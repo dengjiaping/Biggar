@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        style="@style/talent_progress_layout_1">
+        <LinearLayout
+            style="@style/talent_progress_layout_1"
+            android:orientation="horizontal">
+            <View
+                android:background="@null"
+                style="@style/talent_progress_view_1" />
+
+            <RelativeLayout
+                style="@style/talent_progress_layout_2">
+                <ImageView
+                    style="@style/talent_progress_imageview_1" />
+                <TextView
+                    style="@style/talent_progress_tv_1"
+                    android:text="1"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/talent_progress_view_2"
+                android:background="@color/devide_line"/>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/talent_progress_tv_3"
+            android:text="完善个人信息"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/talent_progress_layout_1">
+        <LinearLayout
+            style="@style/talent_progress_layout_1"
+            android:orientation="horizontal">
+            <View
+                style="@style/talent_progress_view_1" />
+
+            <RelativeLayout
+                style="@style/talent_progress_layout_2">
+                <ImageView
+                    style="@style/talent_progress_imageview_2" />
+                <TextView
+                    style="@style/talent_progress_tv_2"
+                    android:text="2"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/talent_progress_view_2"
+                android:background="@color/devide_line"/>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/talent_progress_tv_4"
+            android:text="上传个人照片"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/talent_progress_layout_1">
+        <LinearLayout
+            style="@style/talent_progress_layout_1"
+            android:orientation="horizontal">
+            <View
+                style="@style/talent_progress_view_1" />
+
+            <RelativeLayout
+                style="@style/talent_progress_layout_2">
+                <ImageView
+                    style="@style/talent_progress_imageview_2" />
+                <TextView
+                    style="@style/talent_progress_tv_2"
+                    android:text="3"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/talent_progress_view_2"
+                android:background="@null"/>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/talent_progress_tv_4"
+            android:text="提交审核"/>
+    </LinearLayout>
+
+</LinearLayout>

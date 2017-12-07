@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whites"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="24dp"
+                android:layout_height="36dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="32dp"
+                android:src="@mipmap/map_center" />
+        </FrameLayout>
+
+        <cn.biggar.biggar.view.MapSearchView
+            android:id="@+id/map_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_refresh_locatin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/positioning_3x" />
+
+        <ImageView
+            android:id="@+id/iv_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/shop_3x"
+            android:visibility="gone"/>
+
+        <cn.biggar.biggar.view.MapSearchShopView
+            android:id="@+id/map_search_shop_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

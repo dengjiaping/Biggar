@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:titleBarTitle="我的消息">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whites"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_gg"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/whites"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp">
+
+                    <ImageView
+                        android:id="@+id/iv_gg"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/official_news_3x" />
+
+                    <TextView
+                        android:id="@+id/tv_gg_num"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="-12dp"
+                        android:layout_toRightOf="@+id/iv_gg"
+                        android:background="@drawable/shape_oval_red"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/whites"
+                        android:textSize="8sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/str_official_message"
+                                android:textColor="#333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_gg_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="#d2d2d2" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_gg_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:singleLine="true"
+                            android:text="暂无消息"
+                            android:textColor="#999" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#e3e3e3" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tz"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/whites"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp">
+
+                    <ImageView
+                        android:id="@+id/iv_tz"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/system_news_3x" />
+
+                    <TextView
+                        android:id="@+id/tv_tz_num"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="-12dp"
+                        android:layout_toRightOf="@+id/iv_tz"
+                        android:background="@drawable/shape_oval_red"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/whites"
+                        android:textSize="8sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="系统通知"
+                                android:textColor="#333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_tz_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="#d2d2d2" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_tz_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:singleLine="true"
+                            android:text="暂无消息"
+                            android:textColor="#999" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#e3e3e3" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gh"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/whites"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp">
+
+                    <ImageView
+                        android:id="@+id/iv_gh"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/forum_news_3x" />
+
+                    <TextView
+                        android:id="@+id/tv_gh_num"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="-12dp"
+                        android:layout_toRightOf="@+id/iv_gh"
+                        android:background="@drawable/shape_oval_red"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/whites"
+                        android:textSize="8sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="公会信息"
+                                android:textColor="#333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_gh_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="#d2d2d2" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_gh_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:singleLine="true"
+                            android:text="暂无消息"
+                            android:textColor="#999" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#e3e3e3" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</cn.biggar.biggar.view.RootLayout>

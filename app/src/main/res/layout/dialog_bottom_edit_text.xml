@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whites"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_border_d"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/details_comments_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/app_white"
+            android:hint="请输入评论..."
+            android:maxLength="140"
+            android:padding="6dp"
+            android:textColor="#333"
+            android:textColorHint="@color/app_c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/details_comments_send"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="@color/app_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

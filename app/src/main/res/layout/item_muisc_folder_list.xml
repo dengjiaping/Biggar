@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/app_horizontal_margin"
+    android:paddingTop="@dimen/app_vertical_margin"
+    android:paddingRight="@dimen/app_horizontal_margin"
+    android:paddingBottom="@dimen/app_vertical_margin"
+    >
+
+    <TextView
+        style="@style/app_text_subhead"
+        android:id="@+id/folder_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MUISC"
+        />
+    <TextView
+        style="@style/app_text_caption"
+        android:id="@+id/folder_describe_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/folder_name_tv"
+
+        android:text="共3首"
+        />
+
+    <TextView
+        android:id="@+id/folder_path_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/folder_describe_tv"
+        android:layout_toRightOf="@+id/folder_describe_tv"
+        android:layout_marginLeft="@dimen/app_horizontal_margin"
+        android:text="/ect/user/"
+        />
+
+
+</RelativeLayout>

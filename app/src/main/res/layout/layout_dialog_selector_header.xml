@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_gap"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/app_bg_color_f">
+        <TextView
+            android:id="@+id/id_select_cancel"
+            android:layout_width="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="18dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/id_select_confirm"
+            android:layout_width="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="18dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

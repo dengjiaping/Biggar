@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:titleBarTitle="意见反馈">
+
+    <EditText
+        android:id="@+id/feed_back_content_et"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/whites"
+        android:gravity="top"
+        android:hint="@string/str_feed_back_hint"
+        android:padding="5dp"
+        android:textColor="@color/app_text_color_z"
+        android:textColorHint="@color/app_text_color_q"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="请留下您的联系方式(至少填一项)"
+        android:textColor="@color/app_text_color_z" />
+
+    <LinearLayout
+        android:background="@color/whites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/str_phone"
+                android:textColor="@color/app_text_color_z"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/feed_back_phone_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_transparent"
+                    android:hint="请输入手机号码"
+                    android:maxLength="11"
+                    android:numeric="integer"
+                    android:textColor="@color/app_text_color_z"
+                    android:textColorHint="@color/app_text_color_q"
+                    android:textSize="14sp" />
+                <TextView
+                    android:background="@color/app_text_color_z"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/whites"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="邮    箱"
+                android:textColor="@color/app_text_color_z"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/feed_back_emil_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_transparent"
+                    android:hint="请输入邮箱号码"
+                    android:textColor="@color/app_text_color_z"
+                    android:textColorHint="@color/app_text_color_q"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:background="@color/app_text_color_z"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+        </LinearLayout>
+       
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/feed_back_commit_et"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_rounded_corners_red_big"
+        android:gravity="center"
+        android:text="提    交"
+        android:textColor="@color/whites" />
+</cn.biggar.biggar.view.RootLayout>

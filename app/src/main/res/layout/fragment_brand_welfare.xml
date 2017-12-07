@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/brand_welfare_sv"
+    android:background="#efefef"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/brand_welfare_red_packet_iv"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@mipmap/gift_bag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/app_text_color_z"
+            android:text="超多品牌优惠福利"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:text="等你来揭开"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

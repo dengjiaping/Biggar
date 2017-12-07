@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.biggar.biggar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:isShowLeftSecondIcon="true"
+    app:isShowRightIcon="true"
+    app:titleBarRightIcon="@mipmap/share_3x">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <per.sue.gear2.widget.ProgressWebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#595757">
+
+
+            <ImageView
+                android:id="@+id/load_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/load_iv"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..." />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</cn.biggar.biggar.view.RootLayout>

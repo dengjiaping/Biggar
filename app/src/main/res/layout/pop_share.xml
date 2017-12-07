@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/share_hint_text_tv"
+        android:visibility="gone"
+        android:textColor="@color/app_text_color_z"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_annunciate_finish_hint"/>
+    <LinearLayout
+        android:paddingBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/share_weixin_iv"
+            style="@style/pop_share_layout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+
+                android:scaleType="center"
+                android:src="@mipmap/weixin_guild" />
+
+            <TextView
+                style="@style/pop_share_textview"
+                android:text="@string/str_wechat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_weixin_friend_iv"
+            style="@style/pop_share_layout">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+
+                android:scaleType="center"
+                android:src="@mipmap/pengyouquan_guild" />
+
+            <TextView
+                style="@style/pop_share_textview"
+                android:text="@string/str_circle_friends" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_qq_iv"
+            style="@style/pop_share_layout">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+
+                android:scaleType="center"
+                android:src="@mipmap/qq_guild" />
+
+            <TextView
+                style="@style/pop_share_textview"
+                android:text="@string/str_qq" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_sina_iv"
+            style="@style/pop_share_layout">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+
+                android:scaleType="center"
+                android:src="@mipmap/weibo_guild" />
+
+            <TextView
+                style="@style/pop_share_textview"
+                android:text="@string/str_weibo" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

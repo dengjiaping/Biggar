@@ -1,0 +1,177 @@
+apply plugin: 'com.android.application'
+android {
+    signingConfigs {
+        biggarkey {
+            keyAlias 'biggar'
+            keyPassword 'biggar511800473'
+            storeFile file('../buildsystem/biggar.jks')
+            storePassword 'biggar511800473'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "cn.biggar.biggar"
+        multiDexEnabled true
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 36
+        versionName "4.7"
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+
+        //极光推送
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "6bf98ce982764426c7438d51",
+                JPUSH_CHANNEL: "developer-default",
+        ]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.biggarkey
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    dexOptions {
+        //对Lib做preDexing
+        preDexLibraries true
+        //增加java堆内存大小
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/services/com.google.common.annotations.GwtCompatible'
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:multidex:1.0.2'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:support-v13:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile project(':gear2')
+    compile project(':Qupaisdk-release')
+    compile project(':IMLib')
+    compile project(':IMKit')
+    compile project(':ucrop')
+    compile project(':livegiftview')
+    compile project(':picture_library')
+    //趣拍所需
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.4'
+    compile 'com.google.dagger:dagger:2.0.1'
+    compile 'com.google.dagger:dagger-compiler:2.0.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.0.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    //注解
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //友盟分析
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    //张鸿洋百分比布局
+    compile 'com.zhy:percent-support-extends:1.1.1'
+    //极光推送
+    compile 'cn.jiguang.sdk:jpush:3.0.9'
+    compile 'cn.jiguang.sdk:jcore:1.1.7'
+    //进度条
+    compile 'com.daimajia.numberprogressbar:library:1.4@aar'
+    //属性动画兼容库
+    compile 'com.nineoldandroids:library:2.4.0'
+    //网络请求
+    compile 'com.lzy.net:okgo:3.0.4'
+    //权限
+    compile 'pub.devrel:easypermissions:1.0.1'
+    //eventbus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //视频播放器
+    //    compile 'com.shuyu:GSYVideoPlayer:2.1.0'
+    compile 'com.shuyu:gsyVideoPlayer-java:2.1.1'
+    compile 'com.shuyu:gsyVideoPlayer-armv7a:2.1.1'
+    //万能适配器
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.31'
+    //Log
+    compile 'com.orhanobut:logger:2.1.1'
+    //沉浸式
+    compile 'com.gyf.barlibrary:barlibrary:2.3.0'
+    //轮播图
+    compile 'com.youth.banner:banner:1.4.10'
+    //点击键盘外消失工具类
+    compile 'com.yinglan.keyboard:hidekeyboard:1.1.3'
+    //tab 切换
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //弹框
+    compile 'me.shaohui:bottomdialog:1.1.9'
+    compile 'com.github.razerdp:BasePopup:1.8.2'
+    compile 'com.github.Othershe:NiceDialog:1.1.3'
+    //选择器弹框
+    compile 'com.contrarywind:Android-PickerView:3.2.7'
+    //七牛
+    compile 'com.qiniu:qiniu-android-sdk:7.3.+'
+    //圆形图
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //glide-transformations
+    compile 'jp.wasabeef:glide-transformations:3.0.1'
+    //腾讯Bugly
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    //百分比布局
+    compile 'com.zhy:percent-support-extends:1.0.7'
+    //二维码
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
+    //utils工具类
+    compile 'com.blankj:utilcode:1.9.1'
+    //华为推送
+    compile 'com.huawei.android.hms:push:2.5.2.300'
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //toast 吐司
+    compile 'com.github.GrenderG:Toasty:1.2.5'
+    //图片查看
+    compile 'com.bm.photoview:library:1.4.1'
+    //switch开关
+    compile 'com.kyleduo.switchbutton:library:2.0.0'
+    //滑动返回
+    compile 'me.imid.swipebacklayout.lib:library:1.1.0'
+
+    //其他
+    compile 'com.yarolegovich:discrete-scrollview:1.2.0'
+    compile 'com.github.FJ917:FJMtSortButton:v1.1'
+    compile 'com.github.huburt-Hu:NewbieGuide:v1.0.3'
+    compile 'com.github.lygttpod:SuperTextView:2.1.5'
+}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_6f000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="227dp"
+        android:layout_height="234dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.allen.library.SuperButton
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:sCornersTopLeftRadius="8dp"
+                app:sCornersTopRightRadius="8dp"
+                app:sSolidColor="#f9f9f9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="选择日期"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:src="@mipmap/close_3x" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.allen.library.SuperButton
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                app:sCornersBottomLeftRadius="8dp"
+                app:sCornersBottomRightRadius="8dp"
+                app:sSolidColor="@color/whites" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始"
+                    android:textColor="#b8b8b8" />
+
+                <LinearLayout
+                    android:id="@+id/ll_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="请选择开始日期"
+                        android:textColor="#333"
+                        android:textColorHint="#b8b8b8" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#e5e5e5" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="结束"
+                    android:textColor="#b8b8b8" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="请选择结束日期"
+                        android:textColor="#333"
+                        android:textColorHint="#b8b8b8" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#e5e5e5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.allen.library.SuperButton
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="84dp"
+                        android:layout_height="29dp"
+                        android:gravity="center"
+                        android:text="取消"
+                        android:textColor="#999"
+                        app:sCornersRadius="8dp"
+                        app:sSolidColor="@color/whites"
+                        app:sStrokeColor="#999"
+                        app:sStrokeWidth="1dp" />
+
+                    <com.allen.library.SuperButton
+                        android:id="@+id/tv_sure"
+                        android:layout_width="84dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center"
+                        android:text="确定"
+                        android:textColor="@color/whites"
+                        app:sCornersRadius="8dp"
+                        app:sSolidColor="@color/colorPrimary" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

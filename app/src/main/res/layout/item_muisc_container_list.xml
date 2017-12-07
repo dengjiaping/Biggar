@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/app_horizontal_margin"
+    android:paddingTop="@dimen/app_vertical_margin"
+    android:paddingRight="@dimen/app_horizontal_margin"
+    android:paddingBottom="@dimen/app_vertical_margin"
+    >
+
+    <per.sue.gear2.widget.CircleImageView
+        android:id="@+id/files_icon_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/gear_image_default"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="@dimen/app_view_margin_normal"
+    android:layout_toRightOf="@+id/files_icon_iv"
+    >
+    <TextView
+        style="@style/app_text_subhead"
+        android:id="@+id/fiels_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/files_icon_iv"
+        android:text="MUISC"
+        />
+    <TextView
+        style="@style/app_text_caption"
+        android:id="@+id/files_describe_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fiels_name_tv"
+        android:layout_alignLeft="@+id/fiels_name_tv"
+
+        android:text="共3首"
+        />
+
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>
