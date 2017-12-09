@@ -140,6 +140,12 @@ public class SplashActivity extends BiggarActivity<SplashPresenter> implements E
      * 广告初始化
      */
     private void initAdv() {
+        initJZHAdv();
+        mPresenter.requestOptions();
+        mHandler.sendEmptyMessageDelayed(0, 3000);
+    }
+
+    private void initJZHAdv() {
         int screenWidth = Utils.getScreenWidth(this);
         int videoViewHeight = (int) (1280f * screenWidth / 720f);
 
@@ -162,14 +168,12 @@ public class SplashActivity extends BiggarActivity<SplashPresenter> implements E
         advStyle = Style.PEACOCK;
         adResValue = new AdResValue();
 
-        if (AppPrefrences.getInstance(getApplicationContext()).isFirst()) {
-            videoView.setIntentActivity(this, GuideActivity.class);
-        } else {
-            videoView.setIntentActivity(this, MainActivity.class);
-        }
-
-        mPresenter.requestOptions();
-        mHandler.sendEmptyMessageDelayed(0, 3000);
+//        if (AppPrefrences.getInstance(getApplicationContext()).isFirst()) {
+//            videoView.setIntentActivity(this, GuideActivity.class);
+//        } else {
+//            videoView.setIntentActivity(this, MainActivity.class);
+//        }
+        videoView.setIntentActivity(this, MainActivity.class);
     }
 
 
@@ -183,11 +187,12 @@ public class SplashActivity extends BiggarActivity<SplashPresenter> implements E
      * 手动跳转
      */
     private void handJump() {
-        if (AppPrefrences.getInstance(getApplicationContext()).isFirst()) {
-            startActivity(new Intent(SplashActivity.this, GuideActivity.class));
-        } else {
-            startActivity(MainActivity.startIntent(SplashActivity.this));
-        }
+//        if (AppPrefrences.getInstance(getApplicationContext()).isFirst()) {
+//            startActivity(new Intent(SplashActivity.this, GuideActivity.class));
+//        } else {
+//            startActivity(MainActivity.startIntent(SplashActivity.this));
+//        }
+        startActivity(MainActivity.startIntent(SplashActivity.this));
         finish();
     }
 
@@ -231,7 +236,7 @@ public class SplashActivity extends BiggarActivity<SplashPresenter> implements E
         SwoCleanManager.getInstance(this).clearCache(spaceInfos, advAppId,
                 advCategory, null, null, null, null);
 
-        switch(result){
+        switch (result) {
             case Parameter.OK:
                 isRequestJZHAdvFileSuccess = true;
                 break;
