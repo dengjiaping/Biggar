@@ -22,13 +22,6 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
-    <style name="AppTheme.Daemon">
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowBackground">@color/transparent</item>
-        <item name="android:windowAnimationStyle">@null</item>
-        <item name="android:windowNoTitle">true</item>
-    </style>
-
     <!--新浪微博样式，注意每一项都不能少-->
     <style name="picture.Sina.style" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->

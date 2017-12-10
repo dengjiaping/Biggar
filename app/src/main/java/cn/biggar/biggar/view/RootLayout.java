@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import cn.biggar.biggar.R;
+import cn.biggar.biggar.utils.AppConfig;
 import cn.biggar.biggar.utils.Utils;
 
 /**
@@ -118,15 +119,19 @@ public class RootLayout extends LinearLayout {
         super(context, attrs, defStyleAttr);
         mContext = context;
         TypedArray t = context.obtainStyledAttributes(attrs, R.styleable.RootLayout);
-        mTitleBarColor = t.getColor(R.styleable.RootLayout_titleBarColor, ContextCompat.getColor(context, R.color.whites));
+        mTitleBarColor = t.getColor(R.styleable.RootLayout_titleBarColor,
+                AppConfig.ENABLE_FEAST ? ContextCompat.getColor(context, R.color.color_feast) : ContextCompat.getColor(context, R.color.whites));
         mTitleBarTitle = t.getString(R.styleable.RootLayout_titleBarTitle);
-        mTitleBarTitleColor = t.getColor(R.styleable.RootLayout_titleBarTitleColor, ContextCompat.getColor(context, R.color.app_3));
+        mTitleBarTitleColor = t.getColor(R.styleable.RootLayout_titleBarTitleColor,
+                AppConfig.ENABLE_FEAST ? ContextCompat.getColor(context, R.color.color_feast_text) : ContextCompat.getColor(context, R.color.app_3));
         mTitleBarHeight = t.getDimension(R.styleable.RootLayout_titleBarHeight, getResources().getDimension(R.dimen.titleBarHeight));
-        mTitleBarLeftIcon = t.getResourceId(R.styleable.RootLayout_titleBarLeftIcon, R.mipmap.arrow_333);
+        mTitleBarLeftIcon = t.getResourceId(R.styleable.RootLayout_titleBarLeftIcon,
+                AppConfig.ENABLE_FEAST ? R.mipmap.feast_back : R.mipmap.arrow_333);
         mTitleBarLeftSecondIcon = t.getResourceId(R.styleable.RootLayout_titleBarLeftSecondIcon, R.mipmap.close_3x);
         mTitleBarRightIcon = t.getResourceId(R.styleable.RootLayout_titleBarRightIcon, 0);
         mTitleBarRightText = t.getString(R.styleable.RootLayout_titleBarRightText);
-        mTitleBarRightTextColor = t.getColor(R.styleable.RootLayout_titleBarRightTextColor, ContextCompat.getColor(context, R.color.app_3));
+        mTitleBarRightTextColor = t.getColor(R.styleable.RootLayout_titleBarRightTextColor,
+                AppConfig.ENABLE_FEAST ? ContextCompat.getColor(context, R.color.color_feast_text) : ContextCompat.getColor(context, R.color.app_3));
         isShowLeftSecondIcon = t.getBoolean(R.styleable.RootLayout_isShowLeftSecondIcon, false);
         isShowRightText = t.getBoolean(R.styleable.RootLayout_isShowRightText, false);
         isShowRightIcon = t.getBoolean(R.styleable.RootLayout_isShowRightIcon, false);
@@ -134,7 +139,7 @@ public class RootLayout extends LinearLayout {
         isShowRootLine = t.getBoolean(R.styleable.RootLayout_isShowRootLine, true);
         t.recycle();
 
-        setFitsSystemWindows(true);
+//        setFitsSystemWindows(true);
         setClipToPadding(true);
         setOrientation(VERTICAL);
         setBackgroundColor(Color.WHITE);
@@ -152,6 +157,8 @@ public class RootLayout extends LinearLayout {
         rootLine = mTitleBarView.findViewById(R.id.root_line);
 
         rootLine.setVisibility(isShowRootLine ? VISIBLE : GONE);
+        rootLine.setBackgroundColor(AppConfig.ENABLE_FEAST ? ContextCompat.getColor(mContext, R.color.color_feast)
+                : ContextCompat.getColor(mContext, R.color.app_e5e5e5));
 
         mIVLeft.setImageResource(mTitleBarLeftIcon);
 

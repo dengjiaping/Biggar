@@ -2,20 +2,22 @@
 <resources>
     <!--透明-->
     <color name="app_transparent">#00000000</color>
-    <color name="app_loading">#aa000000</color>
+
     <color name="colorPrimary">#fc4513</color>
-    <!--<color name="colorPrimary">#f23365</color>-->
     <color name="colorPrimaryDark">#404040</color>
     <color name="colorAccent">#FF4081</color>
 
+    <!--节日主题颜色-->
+    <color name="color_feast">#fc4513</color>
+    <color name="color_feast_text">#FFFFFF</color>
+
+
+    <color name="app_loading">#aa000000</color>
     <color name="app_menu_bg">#f7a3ad</color>
-
     <color name="gear_bar_focus">#333333</color>
-
     <color name="bg_activity">#f1f1f1</color>
     <color name="app_divider">#cccccc</color>
 
-    <!--<color name="app_white">#fafafa</color>-->
     <color name="app_white">#ffffff</color>
     <color name="app_white_p">#dcdcdc</color>
 

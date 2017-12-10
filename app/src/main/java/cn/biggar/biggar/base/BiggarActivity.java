@@ -16,6 +16,7 @@ import android.widget.TextView;
 import butterknife.Unbinder;
 import cn.biggar.biggar.R;
 import cn.biggar.biggar.dialog.LoadingDialog;
+import cn.biggar.biggar.utils.AppConfig;
 import cn.biggar.biggar.utils.TUtil;
 
 import com.gyf.barlibrary.ImmersionBar;
@@ -80,12 +81,17 @@ public abstract class BiggarActivity<T extends BasePresenter> extends SwipeBackA
         if (ImmersionBar.isSupportStatusBarDarkFont() || Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             mImmersionBar = ImmersionBar.with(this);
             mImmersionBar
-                    .fitsSystemWindows(true, R.color.whites)
-                    .statusBarDarkFont(true, 0.5f)
-                    .keyboardEnable(true)
+                    .fitsSystemWindows(true, AppConfig.ENABLE_FEAST ? R.color.color_feast : R.color.whites)
+                    .statusBarDarkFont(AppConfig.ENABLE_FEAST ? AppConfig.STATUS_BAR_DARK_FONT : true,
+                            AppConfig.ENABLE_FEAST ? AppConfig.STATUS_BAR_ALPHA : 0.5f)
+                    .keyboardEnable(keyboardEnable())
                     .keyboardMode(getKeyboardMode())
                     .init();
         }
+    }
+
+    protected boolean keyboardEnable() {
+        return false;
     }
 
 
